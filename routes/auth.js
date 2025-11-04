@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const User = require('./models/user');   // ✅ correct path
+const User = require('../models/User');   // ✅ correct path
 const auth = require('../middleware/auth');
 require('dotenv').config();                // ✅ only once
 
